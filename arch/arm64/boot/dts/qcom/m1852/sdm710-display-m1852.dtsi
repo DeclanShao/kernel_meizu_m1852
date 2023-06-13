@@ -1,0 +1,57 @@
+/* Copyright (c) 2017, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2020 Meizu, Inc.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+#include "dsi-panel-boe-nt36670a-fhd-video.dtsi"
+#include "dsi-panel-boe-nt36672a-fhd-video.dtsi"
+
+&soc {
+        dsi_boe_nt36672a_fhd_video_display: qcom,dsi-display@18 {
+                compatible = "qcom,dsi-display";
+				label = "dsi_boe_nt36672a_fhd_video_display";
+				qcom,display-type = "primary";
+				qcom,dsi-ctrl = <&mdss_dsi0>;
+				qcom,dsi-phy = <&mdss_dsi_phy0>;
+                clocks = <&mdss_dsi0_pll BYTECLK_MUX_0_CLK>,
+                        <&mdss_dsi0_pll PCLK_MUX_0_CLK>;
+				clock-names = "src_byte_clk", "src_pixel_clk";
+				pinctrl-names = "panel_active", "panel_suspend";
+				pinctrl-0 = <&sde_dsi_active &sde_te_active>;
+                pinctrl-1 = <&sde_dsi_suspend &sde_te_suspend>;
+				qcom,platform-te-gpio = <&tlmm 10 0>;
+				qcom,platform-reset-gpio = <&tlmm 75 0>;
+				qcom,dsi-panel = <&dsi_boe_nt36672a_fhd_video>;
+                vddio-supply = <&pm660_l11>;
+                lab-supply = <&lcdb_ldo_vreg>;
+                ibb-supply = <&lcdb_ncp_vreg>;
+        }
+
+        dsi_boe_nt36670a_fhd_video_display: qcom,dsi-display@19 {
+                compatible = "qcom,dsi-display";
+				label = "dsi_boe_nt36670a_fhd_video_display";
+				qcom,display-type = "primary";
+				qcom,dsi-ctrl = <&mdss_dsi0>;
+				qcom,dsi-phy = <&mdss_dsi_phy0>;
+				clocks = <&mdss_dsi0_pll BYTECLK_MUX_0_CLK>,
+                        <&mdss_dsi0_pll PCLK_MUX_0_CLK>;
+				clock-names = "src_byte_clk", "src_pixel_clk";
+				pinctrl-names = "panel_active", "panel_suspend";
+				pinctrl-0 = <&sde_dsi_active &sde_te_active>;
+                pinctrl-1 = <&sde_dsi_suspend &sde_te_suspend>;
+				qcom,platform-te-gpio = <&tlmm 10 0>;
+				qcom,platform-reset-gpio = <&tlmm 75 0>;
+				qcom,dsi-panel = <&dsi_boe_nt36670a_fhd_video>;
+				vddio-supply = <&pm660_l11>;
+                lab-supply = <&lcdb_ldo_vreg>;
+                ibb-supply = <&lcdb_ncp_vreg>;
+        }
+}
