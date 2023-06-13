@@ -30,5 +30,62 @@ qcom,3449614_huaqin_ql1898_3210mah_averaged_masterslave_may29th2018 {
         qcom,battery-type = "VEKEN";
         qcom,checksum = <0x4ff6>;
         qcom,gui-version = "PM660GUI - 0.0.0.45";
-        qcom,fg-profile-data = <0xb61e9706 0x7c0307f4 0xcc1c4402 0xa0d850b 0xac170e2a 0xf14dd35a 0x64000000 0xf000000 0x71b5 0xa6c4bdbb 0x22000800 0x4fe276e4 0x6405ba01 0x9d0cad0b 0x7ced6e2b 0x27060920 0x27001400 0xc11f8805 0x8a0a3a06 0xbb1c1e03 0xd5156112 0x7f18f623 0xc14d885b 0x68000000 0xd000000 0xa1d5 0xcbc2a0ca 0x18000000 0x63ea76e4 0xb3fcc7f3 0x35fd3c02 0x2eda1322 0xb633ccff 0x7100000 0xa40c6646 0x18004000 0xcc010afa 0xff000000 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00>;
+        qcom,fg-profile-data = [
+                B6 1E 97 06 
+                7C 03 07 F4 
+                CC 1C 44 02 
+                0A 0D 85 0B 
+                AC 17 0E 2A 
+                F1 4D D3 5A 
+                64 00 00 00 
+                0F 00 00 00 
+                00 00 71 B5 
+                A6 C4 BD BB 
+                22 00 08 00 
+                4F E2 76 e4 
+                64 05 BA 01 
+                9D 0C AD 0B 
+                7C ED 6E 2B 
+                27 06 09 20 
+                27 00 14 00 
+                C1 1F 88 05 
+                8A 0A 3A 06 
+                BB 1C 1E 03 
+                D5 15 61 12 
+                7F 18 F6 23 
+                C1 4D 88 5B 
+                68 00 00 00 
+                0D 00 00 00 
+                00 00 A1 D5 
+                CB C2 A0 CA 
+                18 00 00 00 
+                63 EA 76 E4
+                B3 FC C7 F3 
+                35 FD 3C 02 
+                2E DA 13 22 
+                B6 33 CC FF 
+                07 10 00 00 
+                A4 0C 66 46 
+                18 00 40 00 
+                CC 01 0A FA 
+                FF 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00
+                00 00 00 00
+                00 00 00 00 
+                00 00 00 00
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00 
+                00 00 00 00
+        ];
 };
