@@ -1,0 +1,229 @@
+/* Copyright (c) 2017, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2020 Meizu, Inc.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+&soc {
+
+    tlmm: pinctrl@03400000 {
+
+        cdfinger_pwr {
+
+            cdfinger_pwr_active {
+                mux {
+                    pins = "gpio12";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio12";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+
+            cdfinger_pwr_sleep {
+                mux {
+                    pins = "gpio12";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio12";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+		};
+
+        cdfinger_reset {
+
+			cdfinger_reset_active {
+                mux {
+                    pins = "gpio122";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio122";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+
+            cdfinger_reset_sleep {
+                mux {
+                    pins = "gpio122";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio122";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+		};
+
+        cdfinger_irq {
+
+            cdfinger_irq_active {
+                mux {
+                    pins = "gpio121";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio121";
+                    drive-strength = <2>;
+                    bias-disable;
+                };
+            };
+
+            cdfinger_irq_sleep {
+                mux {
+                    pins = "gpio121";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio121";
+                    drive-strength = <0x2>;
+                    bias-disable;
+                };
+            };
+		};
+
+        sunwave_pwr {
+
+            sunwave_pwr_active {
+
+                mux {
+                    pins = "gpio12";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio12";
+                    drive-strength = <0x2>;
+                    bias-pull-up;
+                };
+            };
+
+            sunwave_pwr_sleep {
+                mux {
+                    pins = "gpio12";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio12";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+        };
+
+        sunwave_reset {
+
+            sunwave_reset_active {
+
+                mux {
+                    pins = "gpio122";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio122";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+
+            sunwave_reset_sleep {
+
+                mux {
+                    pins = "gpio122";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio122";
+                    drive-strength = <2>;
+                    bias-pull-up;
+                };
+            };
+        };
+
+        sunwave_irq {
+
+            sunwave_irq_active {
+
+                mux {
+                    pins = "gpio121";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio121";
+                    drive-strength = <2>;
+                    bias-disable;
+                };
+            };
+
+            sunwave_irq_sleep {
+
+                mux {
+                    pins = "gpio121";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio121";
+                    drive-strength = <2>;
+                    bias-disable;
+                };
+            };
+        };
+
+        sarsensor_irq {
+
+            sarsensor_int_active {
+                mux {
+                    pins = "gpio116";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio116";
+                    drive-strength = <0x2>;
+                    bias-pull-up;
+                    input-enable;
+                };
+            };
+
+            sarsensor_int_suspend {
+
+                mux {
+                    pins = "gpio116";
+                    function = "gpio";
+                };
+
+                config {
+                    pins = "gpio116";
+                    drive-strength = <0x2>;
+                    bias-pull-up;
+                    input-enable;
+                };
+            };
+        };
+    }
+}
