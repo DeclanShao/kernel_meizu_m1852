@@ -4,5 +4,3 @@ obj-$(CONFIG_POWER_SUPPLY)	+= supply/
 obj-$(CONFIG_ARCH_QCOM)		+= qcom/
 obj-$(CONFIG_ARCH_QCOM)		+= qcom/
 obj-$(CONFIG_POWER_SUPPLY)	+= supply/
-
-obj-$(CONFIG_OPPO_SDM670Q_CHARGER) += oppo/
