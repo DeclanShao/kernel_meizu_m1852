@@ -17,7 +17,7 @@
 
         cdfinger_pwr {
 
-            cdfinger_pwr_active {
+            cdfinger_pwr_active: cdfinger_pwr_active{
                 mux {
                     pins = "gpio12";
                     function = "gpio";
@@ -46,7 +46,7 @@
 
         cdfinger_reset {
 
-			cdfinger_reset_active {
+			cdfinger_reset_active: cdfinger_reset_active {
                 mux {
                     pins = "gpio122";
                     function = "gpio";
@@ -59,7 +59,7 @@
                 };
             };
 
-            cdfinger_reset_sleep {
+            cdfinger_reset_sleep: cdfinger_reset_sleep {
                 mux {
                     pins = "gpio122";
                     function = "gpio";
@@ -75,7 +75,7 @@
 
         cdfinger_irq {
 
-            cdfinger_irq_active {
+            cdfinger_irq_active: cdfinger_irq_active {
                 mux {
                     pins = "gpio121";
                     function = "gpio";
@@ -88,7 +88,7 @@
                 };
             };
 
-            cdfinger_irq_sleep {
+            cdfinger_irq_sleep: cdfinger_irq_sleep {
                 mux {
                     pins = "gpio121";
                     function = "gpio";
@@ -96,7 +96,7 @@
 
                 config {
                     pins = "gpio121";
-                    drive-strength = <0x2>;
+                    drive-strength = <2>;
                     bias-disable;
                 };
             };
@@ -104,7 +104,7 @@
 
         sunwave_pwr {
 
-            sunwave_pwr_active {
+            sunwave_pwr_active: sunwave_pwr_active {
 
                 mux {
                     pins = "gpio12";
@@ -113,12 +113,12 @@
 
                 config {
                     pins = "gpio12";
-                    drive-strength = <0x2>;
+                    drive-strength = <2>;
                     bias-pull-up;
                 };
             };
 
-            sunwave_pwr_sleep {
+            sunwave_pwr_sleep: sunwave_pwr_sleep {
                 mux {
                     pins = "gpio12";
                     function = "gpio";
@@ -134,7 +134,7 @@
 
         sunwave_reset {
 
-            sunwave_reset_active {
+            sunwave_reset_active: sunwave_reset_active {
 
                 mux {
                     pins = "gpio122";
@@ -148,7 +148,7 @@
                 };
             };
 
-            sunwave_reset_sleep {
+            sunwave_reset_sleep: sunwave_reset_sleep {
 
                 mux {
                     pins = "gpio122";
@@ -165,7 +165,7 @@
 
         sunwave_irq {
 
-            sunwave_irq_active {
+            sunwave_irq_active: sunwave_irq_active {
 
                 mux {
                     pins = "gpio121";
@@ -179,7 +179,7 @@
                 };
             };
 
-            sunwave_irq_sleep {
+            sunwave_irq_sleep: sunwave_irq_sleep {
 
                 mux {
                     pins = "gpio121";
@@ -196,7 +196,7 @@
 
         sarsensor_irq {
 
-            sarsensor_int_active {
+            sarsensor_int_active: sarsensor_int_active {
                 mux {
                     pins = "gpio116";
                     function = "gpio";
@@ -204,13 +204,13 @@
 
                 config {
                     pins = "gpio116";
-                    drive-strength = <0x2>;
+                    drive-strength = <2>;
                     bias-pull-up;
                     input-enable;
                 };
             };
 
-            sarsensor_int_suspend {
+            sarsensor_int_suspend: sarsensor_int_suspend {
 
                 mux {
                     pins = "gpio116";
@@ -219,7 +219,7 @@
 
                 config {
                     pins = "gpio116";
-                    drive-strength = <0x2>;
+                    drive-strength = <2>;
                     bias-pull-up;
                     input-enable;
                 };
