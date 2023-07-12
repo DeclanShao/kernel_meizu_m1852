@@ -15,6 +15,7 @@
     dsi_boe_nt36670a_fhd_video: qcom,mdss_dsi_boe_nt36670a_fhd_video {
         qcom,mdss-dsi-panel-name = "BOE_NT36670A_FHD_VIDEO";
         qcom,mdss-dsi-panel-type = "dsi_video_mode";
+        qcom,mdss-dsi-panel-controller = <&mdss_dsi0>;
         qcom,mdss-dsi-virtual-channel-id = <0>;
         qcom,mdss-dsi-stream = <0>;
         qcom,mdss-dsi-bpp = <24>;
