@@ -17,7 +17,7 @@
 
         cdfinger_pwr {
 
-            cdfinger_pwr_active: cdfinger_pwr_active{
+            cdfinger_pwr_active: cdfinger_pwr_active {
                 mux {
                     pins = "gpio12";
                     function = "gpio";
@@ -30,7 +30,7 @@
                 };
             };
 
-            cdfinger_pwr_sleep {
+            cdfinger_pwr_sleep: cdfinger_pwr_sleep {
                 mux {
                     pins = "gpio12";
                     function = "gpio";
