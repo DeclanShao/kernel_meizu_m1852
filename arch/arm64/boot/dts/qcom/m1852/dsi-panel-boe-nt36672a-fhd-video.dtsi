@@ -286,7 +286,7 @@
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
 				qcom,mdss-dsi-gesture-off-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-panel-phy-timings = <0x250a0a 0x27240a0a 0x7030400>;
+				qcom,mdss-dsi-panel-phy-timings = [00 25 0a 0a 27 24 0a 0a 07 03 04 00];
 				qcom,display-topology = <0x01 0x00 0x01>;
 				qcom,default-topology-index = <0x00>;
 			};
